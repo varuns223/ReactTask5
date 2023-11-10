@@ -1,0 +1,88 @@
+.form{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+
+}
+.dayInput,.monthInput,.yearInput{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+label{
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-left: 5px;
+    font-family: 'Bruno Ace', cursive;
+}
+
+.dayInput >input,.monthInput >input,.yearInput >input{
+    font-size: large;
+    padding: 10px;
+    font-weight: bolder;
+    color: #874cff;
+    border: 1px solid gray;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    width: 80px;
+    outline: none;
+    font-family: 'Bruno Ace', cursive;
+}
+input:focus{
+    border: 2px solid #874cff;
+}
+
+.buttonSection{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+.Divider{
+    width: 80%;
+    height: 4px;
+    border-radius: 20px;
+    background-color: darkgray;
+}
+
+.CalculateButton{
+    font-weight: bold;
+    letter-spacing: 2px;
+    background-color: #874cff;
+    color: white;
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 80px;
+    border: 2px solid #874cff;
+    margin-left: 10px;
+    font-family: 'Bruno Ace', cursive;
+
+}
+.CalculateButton:hover{
+    background-color: white;
+    color: #874cff;
+    transition: 0.5s ease-out;
+}
+.Divider:hover {
+    background-color: #874cff;
+}
+
+@media (max-width:768px){
+    
+    .dayInput,.monthInput,.yearInput{
+        width: 90%;
+        justify-content: space-evenly;
+    }
+    .label{
+        font-size: 14px;
+    }
+    .dayInput >input,.monthInput >input,.yearInput >input{
+        font-size: 14px;
+        padding: 9px;
+        width: 50px;
+    }
+}

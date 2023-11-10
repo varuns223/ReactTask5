@@ -1,0 +1,17 @@
+.mainField{
+    background-color: white;
+    color: #282c34;
+    border-radius: 20px;
+    border-bottom-right-radius: 80px ;
+    box-shadow: 8px 8px 40px black;
+    
+}
+.mainFiledH{
+    color: #282c34;
+}
+
+@media (max-width:768px) {
+    .mainField{
+        width: 90vw;
+    }
+}
